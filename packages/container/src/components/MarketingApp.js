@@ -7,7 +7,7 @@ export default () => {
     
     useEffect(() => {
         if(elemRef.current) {
-            // mounting component
+            // mounting marketing component
             mount(elemRef.current)
         }
     }, [])
