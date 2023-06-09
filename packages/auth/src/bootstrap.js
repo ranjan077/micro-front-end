@@ -19,11 +19,10 @@ const mount = (el, { onNavigate = {}, defaultHistory }) => {
 
 if(process.env.NODE_ENV === 'development') {
     const browserHistory = createBrowserHistory()
-    const el = document.querySelector('#_feed-dev-root')
+    const el = document.querySelector('#_auth-dev-root')
     if(el) {
-       const { onParentNavigation} =  mount(el, {
-        defaultHistory: browserHistory,
-        onNavigate: () => { console.log('navigation form apps')}
+       const {} =  mount(el, {
+        defaultHistory: browserHistory
        })
     }
 }
