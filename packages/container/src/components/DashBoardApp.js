@@ -5,7 +5,7 @@ export default () => {
     const elemRef = useRef(null)
     useEffect(() => {
         if(elemRef.current) {
-            // mounting dashboard component
+            // mounting dashboard component.
              mount(elemRef.current)
         }
     }, [])
